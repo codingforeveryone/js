@@ -1,28 +1,48 @@
  function checkRoot(string){
-//your code here
-} 
-  // Validate input
-	var test = /\d+/g;
-  string = string.match(test);
-  if (string === null || string.length !== 4) {
-    return "wrong input";
-  }
-  // Check if the numbers are consecutive
-  for (var i = string.length - 1; i > 0; i--) {
-    if (parseInt(string[i]) - parseInt(string[i-1]) !== 1) {
-     return "non-consecutive"
-   }
-  }
-  var number = parseInt(string[0]);
-  for (var i = 1; i < string.length; i++) {
-    number *= string[i];
- }
-  number += 1;
-  var sqrt = Math.sqrt(number);
-  return "The number is " + number + " and it's square root is " + sqrt;
-}
+numbers = [];
+splitted = string.split(",");
 
-// Some test cases
-console.log(checkRoot("1, 2, 3, 4"));
-console.log(checkRoot("Some random nonsense"));
-console.log(checkRoot("34589, 3849, 23, 9"));
+if(splitted.length != 4){ 
+  console.log("incorrect input")
+  return "incorrect input"; }
+//check if input are numbers
+for(i = 0 ; i<4 ; i++){
+  numbers[i] = parseInt(splitted[i],10);
+}
+//console.log(numbers);
+for(i = 0; i < 4; i++){
+  if(isNaN(numbers[i]) ){ 
+    console.log("incorrect input")
+    return "incorrect input"; }
+}
+//check if numbers are sequentials
+max = Math.max.apply(Math, numbers);
+min = Math.min.apply(Math, numbers);
+
+flag1 = false;
+flag2 = false;
+
+for(i=0 ; i<4 ; i++){
+  if(numbers[i] == (max-1)){flag1 = true}
+  if(numbers[i] == (min+1)){flag2 = true}
+}
+if(flag1 && flag2){ 
+  results = calculate(numbers);
+  return results
+}
+else {
+  console.log("non consecutive")
+  return "not consecutive"}
+function calculate(n){
+  par= 1;
+  for(i=0 ; i<4 ; i++){
+    par *= n[i];
+  }
+  par += 1
+  sq = Math.sqrt(par);
+  console.log(par)
+  res = [par, sq]
+  console.log(sq)
+  return res;
+} 
+}
