@@ -1,34 +1,21 @@
 function revertString(input) {
-	// Your code
-
-var length= input.length;
-negative = new Array();
-	for(i=0; i< length; i++){
-		if(input[i] == input[i].toUpperCase()){negative.push(true)}
-		else {negative.push(false)}
-	}
-console.log(negative)
-
-midput = input.toLowerCase()
-console.log(midput)
-
-midput2 = reverse(midput)
-
-output = midput2.split("")
-
-//make uppercase in output
-for(i=0; i< length; i++){
-	if(negative[i]){ output[i] = output[i].toUpperCase()}
+  var reversed = "";
+  var array1 = input.split(" ");
+  var array2 = [];
+  for (var i = 0; i < array1.length; i++) {
+  	array2[i] = array1[i].split("").reverse();
+  }
+for(var j = 0; j <= array1.length-1; j++){
+  for(var k = 0; k < array2[j].length; k++){
+    console.log(j,k);
+    if(array1[j][k] === array1[j][k].toUpperCase()){ 
+      reversed += array2[j][k].toUpperCase();
+    }
+    else { reversed += array2[j][k].toLowerCase(); }
+  }
+  if(j !== array1.length-1){
+    reversed += " ";
+  }
 }
-
-console.log(output)
+  return reversed;
 }
-function reverse(s){
-    return s.split("").reverse().join("");
-}
-
-
-// Some test cases
-
-revertString("RaNdom"); //should return MoDnar
-//console.log("JavaScript"); //should return "JpirCsavaj"
