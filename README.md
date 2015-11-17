@@ -1,6 +1,25 @@
-This repository was created to post javascript files and open issues related to them, fix bugs in codes, write functions and other activities associated with programming in javascript, all while building skills and confidence with GitHub.
+This repository was created to post javascript files and open issues related to them, fix bugs in codes, write functions and other activities associated with programming in javascript, all while building skills and confidence with GitHub.  If you are a new member to this repository, there is a process to follow for your first contribution, please read the following section (New Members). 
 
-Here is how the workflow works in this repository:
+
+# New Members
+* If you are a new member to this repository, you should have a JS exercise called "new-member-x" waiting for you to solve. Your first step is to **find this problem and reserve it for you to solve**.
+ * click on the repository name (js) and then issues on the right hand side. You should be able to find an "issue" called "new-member-x" containing a simple JS exercise.
+ * Reserve this issue by clicking on it, and assuming no one else has reserved it before you, make a comment saying that you intend to solve this problem.
+* **solve the problem locally**
+* **create a branch with a name corresponding to the issue that you have just solved** ("new-member-x") 
+ * To create a branch, click on the repo name (js), then click on the "Branch: master" button, and type in the new branch name that should correspond to the issue-name that you have just solved ("new-member-x")
+* **Push your solution to the newly created branch**
+ * **Need someone to help me describe how to do this**
+* **Create a pull request** to allow someone to pull your solution onto the repo
+ * Click on the green pull request button which is next to the new branch button. Set the "base" to "master" and the "compare" to your new branch name "new-member-x" 
+ * **Need someone to confirm that the point above is correct**
+* **Create a new simple JS problem** titled "new-member-x+1" for the next new member to practice with
+ * Repo name > issues > new issue.  Set the title as "new-member-x+1", include instructions in the description.  Remeber to keep this exercise very simple.
+ 
+**If there is no issue waiting for you titled "new-member-x" then create an issue titled "new member in need of problem"**
+
+
+### Here is the general the workflow for this repository:
 
  - For each new challenge, the author creates a new branch named after the task and creates an issue describing the challenge.
  - If any of contributors want to take the challenge, he replies to the issue so the others won't try to push their solutions at the same time. It would mean that this person 'reserved' a spot for solving the problem.
@@ -11,12 +30,15 @@ As per your preference you can create a working branch of master within this rep
 
 #Some Resources:
 **Here's a good read on Git:**
+
 https://github.com/NataliaLKB/learn-git-basics
 
 **A nice tutorial on resolving conflicts when merging
+
 http://www.gitguys.com/topics/merging-with-a-conflict-conflicts-and-resolutions/ 
 
 **Youtube introduction to GitHub (30 minutes)**
+
 https://www.youtube.com/playlist?list=PLfdtiltiRHWFEbt9V04NrbmksLV4Pdf3j
 
 **GitHub help on 'Fork a repo'**
