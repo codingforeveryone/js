@@ -9,7 +9,7 @@ This repository was created to post javascript files and open issues related to 
 * **create a branch with a name corresponding to the issue that you have just solved** ("new-member-x") 
  * To create a branch, click on the repo name (js), then click on the "Branch: master" button, and type in the new branch name that should correspond to the issue-name that you have just solved ("new-member-x")
 * **Push your solution to the newly created branch**
- * **Need someone to help me describe how to do this**
+ * See resources at the bottom of the page for more info on how to do this
 * **Create a pull request** to allow someone to pull your solution onto the repo
  * Click on the green pull request button which is next to the new branch button. Set the "base" to "master" and the "compare" to your new branch name "new-member-x" 
  * **Need someone to confirm that the point above is correct**
