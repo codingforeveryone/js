@@ -19,9 +19,9 @@ test.a = function (){
 // https://en.wikipedia.org/wiki/List_of_Unicode_characters 
 // http://www.w3schools.com/jsref/jsref_fromCharCode.asp
 var arr = [];
-var i=48;
+var i=33;
 while(i<=126){
-    if(i>=48 && i<=48 || i>=58 && i<=126) {
+    if(i>=33 && i<=48 || i>=58 && i<=126) {
         arr.push(String.fromCharCode(i));
     }
     i++;
