@@ -1,0 +1,1 @@
+A function to filter an array of numbers by an array of functions. Takes 2 arguments, the array to be filtered, and the array of functions to use as filters.
