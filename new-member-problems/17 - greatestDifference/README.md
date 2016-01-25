@@ -1,0 +1,1 @@
+Solution to Greatest Difference kata
